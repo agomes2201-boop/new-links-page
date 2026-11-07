@@ -12,69 +12,72 @@ body{
  margin:0;min-height:100vh;padding:45px 18px;
  display:flex;justify-content:center;
  font-family:Arial,sans-serif;color:#54251f;
- background:linear-gradient(160deg,#faf6ef,#eee3d5);
+ background:linear-gradient(#54251f);
 }
 main{width:100%;max-width:430px;text-align:center}
-.logo{
- width:110px;height:110px;margin:0 auto 20px;
- border:2px solid #b7955b;border-radius:50%;
- background:#54251f;color:#f7f1e8;
- display:flex;align-items:center;justify-content:center;
- font:italic 65px Georgia,serif;
-}
+
 h1{font:600 42px Georgia,serif;margin:5px 0}
 .location{letter-spacing:4px;color:#b7955b;font-size:11px}
-.description{color:#8c766d;font-size:14px;margin:15px 0 28px}
+.description{color:#ffffff;font-size:20px;margin:15px 0 28px}
 .links{display:grid;gap:13px}
 .link{
  display:block;padding:19px 12px;
  border:1px solid #54251f;border-radius:9px;
- background:#54251f;color:#fffaf3;
+ background:#ffffff;color: #54251f;
  text-decoration:none;font-size:14px;font-weight:bold;
  transition:.2s;
 }
-.link:hover{background:#713d34;transform:translateY(-2px)}
+.link:hover{background:#fff651;transform:translateY(-2px)}
+.link-whatsapp{display:flex;align-items:center;justify-content:center;gap:9px}
+.link-whatsapp svg,.link-instagram svg{width:20px;height:20px;flex:none}
+.link-instagram{display:flex;align-items:center;justify-content:center;gap:9px}
 .social{margin-top:35px}
-.social a{color:#54251f;text-decoration:none;margin:0 12px}
-footer{margin-top:25px;color:#9b8578;font-size:11px}
+.social a{color:#ffffff;text-decoration:none;margin:0 12px}
+footer{margin-top:25px;color:#ffffff;font-size:11px}
 </style>
 </head>
 <body>
 <main>
 
 <!-- LOGO PROVISÓRIA: substitua pela logo oficial -->
-<div class="logo">D</div>
+<div class="logo">
+ <img src="./logo.png" alt="Degustarte BH" width="100" height="100">
+</div>
 
 <div class="location">BELO HORIZONTE</div>
 <h1>Degustarte</h1>
 
 <p class="description">
-Experiências, sabores e momentos especiais.
+Experiências, sabores e momentos especiais!
 </p>
 
 <div class="links">
 
-<a class="link"
+<a class="link link-whatsapp"
+href="https://wa.me/5531993321520"
+target="_blank">
+<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+ <path fill="#25D366" d="M16 3a12.8 12.8 0 0 0-11 19.3L3.3 29l6.9-1.8A12.8 12.8 0 1 0 16 3Z"/>
+ <path fill="#fff" d="M22.4 19.1c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.6.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/>
+</svg>
+<span>Fale conosco pelo WhatsApp</span>
+</a>
+
+<a class="link" href="https://canva.link/07if9lhct6u5qbl" target="_blank">
+📖 Conheça nosso catálogo - 2026
+</a>
+
+<a class="link link-instagram"
 href="https://www.instagram.com/degustartebh"
 target="_blank">
-📷 Acompanhe nosso Instagram
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+ <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="url(#instagram-gradient)" stroke-width="2"/>
+ <circle cx="12" cy="12" r="4" fill="none" stroke="url(#instagram-gradient)" stroke-width="2"/>
+ <circle cx="17.5" cy="6.5" r="1.2" fill="#d9469b"/>
+ <defs><linearGradient id="instagram-gradient" x1="3" y1="21" x2="21" y2="3" gradientUnits="userSpaceOnUse"><stop stop-color="#feda75"/><stop offset=".5" stop-color="#fa7e1e"/><stop offset="1" stop-color="#d62976"/></linearGradient></defs>
+</svg>
+<span>Acompanhe nosso Instagram</span>
 </a>
-
-<!-- Adicione o WhatsApp quando tiver o número -->
-<!--
-<a class="link"
-href="https://wa.me/5531999999999"
-target="_blank">
-💬 Fale conosco pelo WhatsApp
-</a>
--->
-
-<!-- Adicione o catálogo quando tiver o endereço -->
-<!--
-<a class="link" href="URL_DO_CATALOGO" target="_blank">
-📖 Conheça nosso catálogo
-</a>
--->
 
 <!-- Adicione a localização quando tiver o endereço -->
 <!--
@@ -85,14 +88,10 @@ target="_blank">
 
 </div>
 
-<div class="social">
-<a href="https://www.instagram.com/degustartebh"
-target="_blank">Instagram</a>
-</div>
 
 <footer>
 Feito com carinho ♥<br><br>
-DEGUSTARTE BH
+DEGUSTARTE BH 
 </footer>
 
 </main>
